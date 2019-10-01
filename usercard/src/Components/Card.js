@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
+    background-color: white;
+    color: black;
     display: flex;
     width: 800px;
     margin: 20px auto;
@@ -13,7 +15,10 @@ const StyledDiv = styled.div`
     }
 
     section {
-        height: 250px;
+        margin-left: 25px;
+        height: 150px;
+        line-height: 1rem;
+        text-align: left;
     }
 `
 
