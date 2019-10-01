@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Card from './Components/Card';
 import CardList from './Components/CardList';
+import styled from 'styled-components';
 import './App.css';
+
+const StyledDiv = styled.div`
+  /* max-width: 800px; */
+  margin: 0 auto;
+`
 
 export default class App extends Component {
   constructor(props) {
@@ -30,10 +36,12 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Card details={this.state.userDetails} />
-          <CardList listDetails={this.state.cardList} />
-        </header>
+        <StyledDiv>
+          <header className="App-header">
+            <Card details={this.state.userDetails} />
+            <CardList listDetails={this.state.cardList} />
+          </header>
+        </StyledDiv>
       </div>
     );
   }
