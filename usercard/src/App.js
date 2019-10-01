@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Card from './Components/Card';
 import './App.css';
 
 export default class App extends Component {
@@ -24,7 +25,8 @@ export default class App extends Component {
     <div className="App">
       <header className="App-header">        
         {this.state.userDetails.login}
-        <img src={this.state.userDetails.avatar_url} alt=""/>     
+        <img src={this.state.userDetails.avatar_url} alt="" />
+        <Card details={this.state.userDetails} />
       </header>
     </div>
     );
