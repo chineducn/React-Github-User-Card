@@ -8,7 +8,7 @@ const StyledDiv = styled.div`
 export default class Card extends Component {
     render() {
         const { avatar_url, name, login, location, url, followers, following, bio } = this.props.details;
-        debugger
+        
         return (
             <StyledDiv>
                 <img src={avatar_url} alt="user avatar" />
